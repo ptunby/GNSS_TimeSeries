@@ -6,11 +6,12 @@ import fit_timeseries
 def fit_tide_gauge(filename):
     
     """
-    This function takes a file name for a csv file and returns the estimated E, N and U components of velocity for that site
+    This function takes a file name for an the decimal degrees and sea level change in mm and returns the estimated rate of change for that site and the
+    uncertainty.
     It uses the module 'fit_timeseries'.
     using a linear least squares fit.
     param a: filename as a string
-    returns: the estimated components of the velocities and uncertainties for the east, north, and up
+    returns: the estimated components of the velocities and uncertainties for sea level change.
     """
     
     #Data read into a pandas dataframe
